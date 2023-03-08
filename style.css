@@ -1,8 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:    border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
 
 header{
-    background-image:url(background.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 100%;
-
+    background-color: #02111B;
+    
 }
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20vh;
+}
+
+.logo__header{
+    width: 16.8rem;
+    padding: 0rem 1rem 0rem 3rem;
+    margin-left: 3rem;
+    align-items: center;
+    
+}
+
+.lista__header{
+    list-style: none;
+    display: flex;
+    margin-right: 10em;
+    align-items: center;
+    
+}
+
+.lista__header a{
+    padding: 1rem  3em;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Inter';
+    font-weight:bold;
+    
+   
+}
+
+.primeira__secao{
+    background-image:url("/Imagens/backgroundHeader.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    background-position: bottom right;
+    
+}
+
