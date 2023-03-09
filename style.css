@@ -18,12 +18,13 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 10vh;
+    height: 13vh;
 }
 
 .logo__header{
-    width: 16.8rem;
-    padding: 0rem 1rem 0rem 3rem;
+    height: 11rem;
+    width: 15.8rem;
+    padding: 1rem 1rem 1rem 3rem;
     margin-left: 3rem;
     align-items: center;
     
@@ -63,9 +64,10 @@ nav{
 
 .primeira__secao{
     background-image:url("/Imagens/backgrond2.jpg");
+    filter: brightness(1.5);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 87vh;
     background-position: bottom right;
     display: flex;
     align-items: center;
@@ -74,12 +76,13 @@ nav{
 }
 
 .titulo__main{
-    color: white;
+    color: rgba(255, 255, 255, 0.836);
     font-family: 'Bebas Neue';
     font-size: 7rem;
     margin-left: 8rem;
     mix-blend-mode: normal;
     text-shadow: 0px 4px 4px #000000;
+    font-weight: 600;
     
 }
 
@@ -89,7 +92,7 @@ nav{
     display: block;
     font-size: 3.2rem;
     margin-left: 50%;
-    background-color: #FF0090;
+    background-color: #d80365;
     height: 6.4rem;
     text-align: center;
     width: 27.2rem;
@@ -108,4 +111,22 @@ nav{
 .link__main:hover{
     transform: scale(1.2);
     transition: 0.4s all;
+}
+
+.servicos{
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.servicos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
 }
