@@ -9,7 +9,7 @@
 }
 
 header{
-    background: linear-gradient(rgb(0, 0, 0), rgba(15, 15, 15, 0.7));
+    background-color: rgb(0, 0, 0);
     z-index: 9;
     
 }
@@ -18,7 +18,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 15vh;
+    height: 10vh;
 }
 
 .logo__header{
@@ -29,11 +29,24 @@ nav{
     
 }
 
+.logo__header:hover{
+    transform: scale(1.05);
+    transition: 0.4s all;
+   
+}
+
 .lista__header{
     list-style: none;
     display: flex;
     margin-right: 10em;
     align-items: center;
+    
+}
+
+.lista__header :hover{
+    color: #FF0090;
+    transform: scale(1.2);
+    transition: 0.4s all;
     
 }
 
@@ -52,7 +65,7 @@ nav{
     background-image:url("/Imagens/backgrond2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 85vh;
+    height: 90vh;
     background-position: bottom right;
     display: flex;
     align-items: center;
@@ -89,4 +102,10 @@ nav{
     margin: auto;
     margin-top: 4rem;
     
+    
+}
+
+.link__main:hover{
+    transform: scale(1.2);
+    transition: 0.4s all;
 }
