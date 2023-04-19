@@ -1,3 +1,11 @@
+document.querySelector(".hamburguer")
+        .addEventListener("click", mostrar_menu)
+
+function mostrar_menu(){
+    document.querySelector(".menu").classList.toggle("show-menu")
+}
+
+
 function calcularTotal() {
     var planoNormal = 129;
     var planoBlack = 150;
@@ -24,3 +32,4 @@ function calcularTotal() {
     // Exibe o total no campo de valor
     document.getElementById('total').innerText = 'Valor Total: R$ ' + total.toFixed(2);
 }
+

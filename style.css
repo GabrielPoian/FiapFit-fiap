@@ -62,6 +62,72 @@ nav{
    
 }
 
+.hamburguer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 3.4rem;
+    width: 3.4rem;
+    position: fixed;
+    right: 160rem;
+    top: 8rem;
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+
+.linha{
+    height: .5rem;
+    width: 100%;
+    background-color: #FF0090;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.menu{
+    
+        
+            height: 100vh;
+            width: 23rem;
+            position: fixed;
+            right: -23rem;
+            background-color: #FF0090;
+            z-index: 9;
+            transition: left 10s;
+            font-size: 2.8rem;
+        }
+
+
+
+
+.menu a{
+    text-decoration: none;
+    color: var(--color-secundary);
+}
+.menu a:hover{
+    color: #6A3093;
+}
+
+.menu ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    gap: 1.6rem
+}
+
+.menu li{
+    list-style: none;
+}
+
+
+
+.show-menu{
+    left: 0;
+}
+
+
 .primeira__secao{
     background-image:url("/Imagens/backgrond2.jpg");
     background-repeat: no-repeat;
@@ -112,7 +178,12 @@ nav{
     transition: 0.4s all;
 }
 
+
+.secao__planos{
+    height: 100vh;
+}
 .servicos{
+    height: 100vh;
 	width: 940px;
 	margin: 0 auto;
 	padding: 50px 0;
@@ -131,3 +202,6 @@ nav{
 }
 
 
+@media(max_width:900px){
+
+}
