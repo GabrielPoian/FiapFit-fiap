@@ -201,6 +201,29 @@ nav{
 	border-radius: 10px;
 }
 
+.secao__planos{
+    margin-left: 4rem;
+
+}
+
+.titulo__planos {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Inter';
+    margin: 3rem 0rem;
+}
+
+.plano_prata{
+    font-family: 'Inter';
+        height: 10rem;
+        background-color: black;
+        color: white;
+        width: 49rem;
+        
+        border: 1px solid #dcd0e0;
+        border-radius: 7px;
+    
+}   
 
 @media(max_width:900px){
 

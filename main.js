@@ -1,3 +1,25 @@
+document.querySelector("#qtde").addEventListener("change", calcularOrcamento)
+document.querySelector("#js").addEventListener("change", calcularOrcamento)
+document.querySelector("#layout_sim").addEventListener("change", calcularOrcamento)
+document.querySelector("#layout_nao").addEventListener("change", calcularOrcamento)
+document.querySelector("#prazo").addEventListener("change", calcularOrcamento)
+
+function calcularOrcamento() {
+    
+    let preco = qtde.value * 100
+    if (js.checked) preco *= 1.1
+    if(layout_sim.checked) preco += 500
+
+    let taxaDeUrgencia = preco * (1.1 - prazo.value * 0.1)
+    preco += taxaDeUrgencia
+
+    label_prazo.innerHTML = `Prazo (${prazo.value} semanas)`
+
+    output.innerHTML = "R$ " + preco.toFixed(2)
+}
+
+
+
 document.querySelector(".hamburguer")
         .addEventListener("click", mostrar_menu)
 
@@ -6,30 +28,22 @@ function mostrar_menu(){
 }
 
 
-function calcularTotal() {
-    var planoNormal = 129;
-    var planoBlack = 150;
-    var nutricao = 30;
-    var personal = 300;
+document.querySelector("#qtde").addEventListener("change", calcularOrcamento)
+document.querySelector("#js").addEventListener("change", calcularOrcamento)
+document.querySelector("#layout_sim").addEventListener("change", calcularOrcamento)
+document.querySelector("#layout_nao").addEventListener("change", calcularOrcamento)
+document.querySelector("#prazo").addEventListener("change", calcularOrcamento)
 
-    var total = 0;
+function calcularOrcamento() {
+    
+    let preco = qtde.value * 100
+    if (js.checked) preco *= 1.1
+    if(layout_sim.checked) preco += 500
 
-    // Verifica qual plano foi selecionado
-    if (document.getElementById('planoNormal').checked) {
-        total += planoNormal;
-    } else if (document.getElementById('planoBlack').checked) {
-        total += planoBlack;
-    }
+    let taxaDeUrgencia = preco * (1.1 - prazo.value * 0.1)
+    preco += taxaDeUrgencia
 
-    // Verifica quais serviços extras foram selecionados
-    if (document.getElementById('nutricao').checked) {
-        total += nutricao;
-    }
-    if (document.getElementById('personal').checked) {
-        total += personal;
-    }
+    label_prazo.innerHTML = `Prazo (${prazo.value} semanas)`
 
-    // Exibe o total no campo de valor
-    document.getElementById('total').innerText = 'Valor Total: R$ ' + total.toFixed(2);
+    output.innerHTML = "R$ " + preco.toFixed(2)
 }
-

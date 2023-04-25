@@ -72,23 +72,45 @@
     </section>
 
     
-    <section  id="planos"class="secao__planos">
-        <form>
-            <h1>Formulário de Inscrição</h1>
-    <form>
-        <h2>Planos</h2>
-        <input type="radio" id="planoNormal" name="plano" onchange="calcularTotal()"> Plano Normal - R$ 129 por mês<br>
-        <input type="radio" id="planoBlack" name="plano" onchange="calcularTotal()"> Plano Black - R$ 150 por mês<br>
+    <section class="secao__planos">
+        <form action="">
+            <h3 class="titulo__planos">ESCOLHA O PLANO MAIS VANTAJOSO PARA 
+                <br>VOCÊ:</h3>
 
-        <h2>Serviços Extras</h2>
-        <input type="checkbox" id="nutricao" onchange="calcularTotal()"> Nutrição - R$ 30 por mês<br>
-        <input type="checkbox" id="personal" onchange="calcularTotal()"> Personal Trainer - R$ 300 por mês<br>
+            <div class="plano_prata">
+                <input type="checkbox" id="js">
+                <label for="js">PLANO FIAP OURO</label>
+                
+                <p>Fidelidade: 12 meses</p>
+                <p>Treine em todas unidades</p>
+            </div>
 
-        <p id="total">Valor Total: R$ 0.00</p>
+            <label for="qtde">Quantos mesês você quer incluir no seu plano?</label>
+            <input type="number" id="qtde" min="1" value="1">
+            
+            
 
-        <input type="submit" value="Enviar">
-        <script src="main.js"></script>
+            <label for="js">PLANO FIAP PRATA</label>
+            <input type="checkbox" id="js">
 
+
+            <label for="layout">Plano </label>
+            <div>
+                <input type="radio" id="layout_sim" name="layout">
+                <label for="layout_sim">Sim, preciso de layout</label>
+
+                <input type="radio" id="layout_nao" name="layout">
+                <label for="layout_nao">Não, já tenho</label>
+            </div>
+
+            <label for="prazo" id="label_prazo">Prazo</label>
+            <input type="range" id="prazo" min="1" max="10">
+
+            <output id="output">R$ 100,00</output>
+        </form>
+    </section>
+
+    <script src="/main.js"></script>
 
 
     </section>
