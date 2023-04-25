@@ -201,29 +201,73 @@ nav{
 	border-radius: 10px;
 }
 
-.secao__planos{
-    margin-left: 4rem;
-
+.secao__planos {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    /* margin-right: 21rem; */
+    background-color: #686868;
 }
 
 .titulo__planos {
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: bold;
-    font-family: 'Inter';
+    font-family: 'Bebas Neue';
     margin: 3rem 0rem;
 }
 
-.plano_prata{
+.planos {
     font-family: 'Inter';
-        height: 10rem;
-        background-color: black;
-        color: white;
-        width: 49rem;
-        
-        border: 1px solid #dcd0e0;
-        border-radius: 7px;
+    height: 30%;
+    background-color: black;
+    color: white;
+    width: 100%;
+    font-size: 3rem;
+    border: 0.4rem solid #f50bbbf3;
+    border-radius: 2rem;
+    margin-top: 2rem;
+}
+
+.checkbox__1{
     
-}   
+        margin: 3rem;
+        display: flex;
+        align-items: center;
+    
+}
+
+.checkbox{
+    transform: scale(2);
+}
+
+.valor__plano{
+    color: #d80365;
+}
+
+.checkbox__texto{
+    padding-left: 2rem;
+    font-weight: bold;
+}
+
+.texto__checkbox {
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    margin-left: 3rem;
+}
+
+.preco__plano{
+    margin-left: 3rem;
+    font-size: 4rem;
+}
+
+.valor__total{
+    
+        font-size: 6rem;
+        font-family: 'Bebas Neue';
+        margin-top: 6rem;
+    
+}
+
 
 @media(max_width:900px){
 

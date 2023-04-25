@@ -1,21 +1,25 @@
-document.querySelector("#qtde").addEventListener("change", calcularOrcamento)
-document.querySelector("#js").addEventListener("change", calcularOrcamento)
-document.querySelector("#layout_sim").addEventListener("change", calcularOrcamento)
-document.querySelector("#layout_nao").addEventListener("change", calcularOrcamento)
-document.querySelector("#prazo").addEventListener("change", calcularOrcamento)
+
+document.querySelector("#js1").addEventListener("change", calcularOrcamento)
+document.querySelector("#js2").addEventListener("change", calcularOrcamento)
 
 function calcularOrcamento() {
     
-    let preco = qtde.value * 100
-    if (js.checked) preco *= 1.1
-    if(layout_sim.checked) preco += 500
 
-    let taxaDeUrgencia = preco * (1.1 - prazo.value * 0.1)
-    preco += taxaDeUrgencia
+     
+    let preco = 0
+    if (js2.checked) {
+        preco = 109,99
+        js1.checked = false
+    }
+    if (js1.checked) {
+        preco = 129,99
+        js2.checked = false
+    }
+    
+    
+    
 
-    label_prazo.innerHTML = `Prazo (${prazo.value} semanas)`
-
-    output.innerHTML = "R$ " + preco.toFixed(2)
+    output.innerHTML = "Valor por Mês = R$ " + preco.toFixed(2)
 }
 
 
@@ -28,22 +32,3 @@ function mostrar_menu(){
 }
 
 
-document.querySelector("#qtde").addEventListener("change", calcularOrcamento)
-document.querySelector("#js").addEventListener("change", calcularOrcamento)
-document.querySelector("#layout_sim").addEventListener("change", calcularOrcamento)
-document.querySelector("#layout_nao").addEventListener("change", calcularOrcamento)
-document.querySelector("#prazo").addEventListener("change", calcularOrcamento)
-
-function calcularOrcamento() {
-    
-    let preco = qtde.value * 100
-    if (js.checked) preco *= 1.1
-    if(layout_sim.checked) preco += 500
-
-    let taxaDeUrgencia = preco * (1.1 - prazo.value * 0.1)
-    preco += taxaDeUrgencia
-
-    label_prazo.innerHTML = `Prazo (${prazo.value} semanas)`
-
-    output.innerHTML = "R$ " + preco.toFixed(2)
-}
