@@ -8,6 +8,64 @@
     font-size: 62.5%;
 }
 
+.hamburguer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 2.4rem;
+    width: 2.4rem;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.linha{
+    height: .5rem;
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.menu{
+    height: 100vh;
+    width: 20rem;
+    position: fixed;
+    right: -20rem;
+    background-color: #FFF;
+    z-index: 9;
+    transition: right 1s;
+    font-size: 1.8rem;
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--color-secundary);
+}
+.menu a:hover{
+    color: #6A3093;
+}
+
+.menu ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    gap: 1.6rem
+}
+
+.menu li{
+    list-style: none;
+}
+
+
+
+.show-menu{
+    right: 0;
+}
+
 header{
     background-color: rgb(0, 0, 0);
     z-index: 9;
@@ -62,70 +120,6 @@ nav{
    
 }
 
-.hamburguer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 3.4rem;
-    width: 3.4rem;
-    position: fixed;
-    right: 160rem;
-    top: 8rem;
-    z-index: 10;
-    cursor: pointer;
-}
-
-
-
-.linha{
-    height: .5rem;
-    width: 100%;
-    background-color: #FF0090;
-    box-shadow: 2px 2px 2px #000;
-}
-
-.menu{
-    
-        
-            height: 100vh;
-            width: 23rem;
-            position: fixed;
-            right: -23rem;
-            background-color: #FF0090;
-            z-index: 9;
-            transition: left 10s;
-            font-size: 2.8rem;
-        }
-
-
-
-
-.menu a{
-    text-decoration: none;
-    color: var(--color-secundary);
-}
-.menu a:hover{
-    color: #6A3093;
-}
-
-.menu ul{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 2rem;
-    gap: 1.6rem
-}
-
-.menu li{
-    list-style: none;
-}
-
-
-
-.show-menu{
-    left: 0;
-}
 
 
 .primeira__secao{
@@ -179,27 +173,85 @@ nav{
 }
 
 
+#secao-projetos{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    background-color: #828282;
+    height: 100vh;
+}
+
+#secao-projetos ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+#secao-projetos li{
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+
+#secao-projetos h3 {
+    font-size: 5rem;
+    font-family: 'Bebas Neue';
+    color: #f50bbbf3;
+}
+
+#secao-projetos p{  
+        font-size: 3rem;
+        color: white;
+        font-family: 'Inter';
+        font-weight: bold;
+    
+}
+
+.titulo__servicos{
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-size: 6rem;
+}
+
+
+
+.card-image img {
+    width: 51rem;
+    height: 72rem;
+    border-radius: 6rem;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity .5s, bottom .5s;
+    padding: 13rem 2rem;
+    gap: 1rem;
+}
+
+
+
+#secao-projetos li:hover .card-info{
+    opacity: 1;
+    bottom: 20%;
+}
+
+#secao-projetos li:hover .card-image img{
+    opacity: .5;
+}
+
 .secao__planos{
     height: 100vh;
 }
-.servicos{
-    height: 100vh;
-	width: 940px;
-	margin: 0 auto;
-	padding: 50px 0;
+
+.secao__planos a{
+    margin-top: 43rem;
+    margin-right: 33rem;
 }
 
-.servicos li {
-	display: inline-block;
-	text-align: center;
-	width: 30%;
-	vertical-align: top;
-	margin: 0 1.5%;
-	padding: 30px 20px;
-	box-sizing: border-box;
-	border: 2px solid #000000;
-	border-radius: 10px;
-}
 
 .secao__planos {
     display: flex;
@@ -268,7 +320,3 @@ nav{
     
 }
 
-
-@media(max_width:900px){
-
-}

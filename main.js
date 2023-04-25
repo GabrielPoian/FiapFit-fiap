@@ -30,5 +30,3 @@ document.querySelector(".hamburguer")
 function mostrar_menu(){
     document.querySelector(".menu").classList.toggle("show-menu")
 }
-
-

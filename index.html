@@ -12,6 +12,40 @@
   
 </head>
 <body>
+    <div class="hamburguer">
+        <div class="linha"></div>
+        <div class="linha"></div>
+        <div class="linha"></div>
+    </div>
+
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#secao-apresentacao">
+                    <i class="fa-solid fa-user"></i>
+                    Apresentação
+                </a>
+            </li>
+            <li>
+                <a href="#secao-projetos">
+                    <i class="fa-solid fa-code"></i>
+                    Projetos
+                </a>
+            </li>
+            <li>
+                <a href="#secao-orcamento">
+                    <i class="fa-solid fa-money-bill"></i>
+                    Orçamento
+                </a>
+            </li>
+        </ul>
+    </nav>
     <header id="home">
         <nav>
             <a class="link__logo" href="#">
@@ -26,41 +60,6 @@
             </ul>
            
         </nav>
-        <div class="hamburguer">
-            <div class="linha"></div>
-            <div class="linha"></div>
-            <div class="linha"></div>
-        </div>
-    
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="#home">
-                        <i class="fa-solid fa-house"></i>
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#secao_servicos">
-                        <i class="fa-solid fa-user"></i>
-                        Serviços
-                    </a>
-                </li>
-                <li>
-                    <a href="#planos">
-                        <i class="fa-solid fa-code"></i>
-                        Planos
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-money-bill"></i>
-                        Área do aluno
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
 
     <section class="primeira__secao">
         <div class="container__primeira">
@@ -70,6 +69,46 @@
             
         </div>
     </section>
+
+    <section id="secao-projetos">
+        <h2 class="titulo__servicos">Benefícios</h2>
+        <div>
+            <ul>
+                <li>
+                    <div class="card-image">
+                        <img src="/Imagens/personal1.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="titulo_do_servico">Treinamento Personalizado</h3>
+                        
+                        <p>Nossos treinadores são altamente qualificados e  trabalham individualmente com você para criar treinos que atendam às suas necessidades e objetivos de saúde e fitness. Cada sessão é projetada para ser eficiente e segura, visando o seu progresso..</p>
+                        <a href="" class="button">saiba mais</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="card-image">
+                        <img src="/Imagens/ginastica-coletiva.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="titulo_do_servico">Aulas Coletivas</h3>
+                        <p>Temos uma ampla variedade de aulas coletivas para todos os níveis de habilidade e preferências, desde dança e ioga até artes marciais e cardio. Nossos instrutores experientes garantem que as aulas sejam motivadoras, desafiadoras e divertidas.</p>
+                       
+                    </div>
+                </li>
+                <li>
+                    <div class="card-image">
+                        <img src="/Imagens/medica-tiro-feliz-medico-com-laranja-e-kiwi.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="titulo_do_servico">Nutricionistas</h3>
+                        <p>Nossa equipe de nutricionistas especializados trabalha com você para criar um plano alimentar personalizado que atenda às suas necessidades nutricionais e objetivos de saúde e ajustam o plano de acordo com as suas necessidades em constante evolução.</p>
+                        
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
 
     
     <section class="secao__planos">
@@ -89,7 +128,7 @@
                     <p>Fidelidade: 12 meses</p>
                     <p>Treine em todas unidades</p>
                 </div>
-                
+                <a href='#' class="link__main">Matricule-se já</a>
             </div>
 
             <div class="planos">
@@ -112,37 +151,15 @@
             <output id="output" class="valor__total"> Valor por Mês = R$ 0,00</output>
         </form>
     </section>
-
+    <footer>
+        <p>fim</p>
+    </footer>
     <script src="/main.js"></script>
 
 
     </section>
 
-    <section  id="secao_servicos" class="secao__servicos">
-
-        <h2 class="titulo_servicos">Serviços</h2>
-        <ul class="servicos">
-            <li>
-                <h2>Cabelo</h2>
-                <img src="cabelo.jpg">
-                <p class="produto-descricao">Na tesoura ou máquina, como o cliente preferir</p>
-                
-            </li>
-            <li>
-                <h2>Barba</h2>
-                <img src="barba.jpg">
-                <p class="produto-descricao">Corte e desenho profissional de barba</p>
-                
-            </li>
-            <li>
-                <h2>Cabelo + Barba</h2>
-                <img src="cabelo+barba.jpg">
-                <p class="produto-descricao">Pacote completo de cabelo e barba</p>
-                
-            </li>
-        </ul>
-    </section>
-
+    
    
     
     
