@@ -33,7 +33,7 @@
     width: 20rem;
     position: fixed;
     right: -20rem;
-    background-color: #FFF;
+    background-color: #FF0090;
     z-index: 9;
     transition: right 1s;
     font-size: 1.8rem;
@@ -47,13 +47,15 @@
     color: #6A3093;
 }
 
-.menu ul{
+.menu ul {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 2rem;
-    gap: 1.6rem
+    gap: 1.6rem;
+    font-family: 'Inter';
+    font-size: 2.4rem;
 }
 
 .menu li{
@@ -243,17 +245,12 @@ nav{
     opacity: .5;
 }
 
-.secao__planos{
-    height: 100vh;
-}
-
-.secao__planos a{
-    margin-top: 43rem;
-    margin-right: 33rem;
-}
 
 
-.secao__planos {
+
+
+
+#secao__planos {
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -261,6 +258,12 @@ nav{
     background-color: #686868;
 }
 
+#secao__planos a{
+    margin-top: 59rem;
+    margin-right: 33rem;
+    
+    
+}
 .titulo__planos {
     font-size: 6rem;
     font-weight: bold;
@@ -320,3 +323,14 @@ nav{
     
 }
 
+@media (max-width: 900px) {
+    #secao-projetos ul{
+        flex-direction: column;
+    }
+    .large-only{
+        display: none;
+    }
+    #secao-orcamento form{
+        grid-template-columns: 1fr;
+    }
+}
