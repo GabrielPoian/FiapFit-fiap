@@ -125,7 +125,7 @@ nav{
 
 
 .primeira__secao{
-    background-image:url("/Imagens/backgrond2.jpg");
+    background-image:url("./Imagens/backgrond2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 87vh;
